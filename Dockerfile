@@ -1,5 +1,4 @@
 FROM python:3.9.14-alpine3.16
-USER root
 
 
 
@@ -10,3 +9,4 @@ WORKDIR /web/
 EXPOSE 1234
 ENTRYPOINT ["python", "-m", "flask", "run", "--host=0.0.0.0"]
 
+USER root
